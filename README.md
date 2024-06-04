@@ -1,8 +1,10 @@
 # PDF Intelligence System with Retrieval Augmented Generation (RAG)
 
+![](https://github.com/DeathStar1711/Chat-PDF/blob/master/Recording%202024-06-04%20205338.gif)
+
 ## Overview
 
-The goal of this project is to create a user-centric and intelligent system that enhances information retrieval from PDF documents through natural language queries. The project focuses on streamlining the user experience by developing an intuitive interface, allowing users to interact with PDF content using language they are comfortable with. To achieve this, we leverage the Retrieval Augmented Generation (RAG) methodology introduced by Meta AI researchers.
+The goal of this project is to create a user-centric and intelligent system that enhances information retrieval from PDF documents through natural language queries. The project focuses on streamlining the user experience by developing an intuitive interface, allowing users to interact with PDF content using language they are comfortable with. To achieve this, I leverage the Retrieval Augmented Generation (RAG) methodology introduced by Meta AI researchers.
 
 ## Retrieval Augmented Generation (RAG)
 
@@ -15,7 +17,7 @@ RAG is a method designed to address knowledge-intensive tasks, particularly in i
 1. **Input**: RAG takes multiple pdf as input.
 2. **VectoreStore**: The pdf's are then converted to vectorstore using FAISS and all-MiniLM-L6-v2 Embeddings model from Hugging Face.
 3. **Memory**: Conversation buffer memory is used to maintain a track of previous conversation which are fed to the llm model along with the user query.
-4. **Text Generation with GPT-3.5 Turbo**: The embedded input is fed to the GPT-3.5 Turbo model from the OpenAI API, which produces the final output.
+4. **Text Generation with Groq API**: The embedded input is fed to the Groq API, which produces the final output.
 5. **User Interface**: Streamlit is used to create the interface for the application.
 
 ### Benefits
@@ -36,7 +38,7 @@ To use the PDF Intelligence System:
 
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/ArmaanSeth/ChatPDF.git
+   git clone https://github.com/DeathStar1711/Chat-PDF.git
    ```
 
 2. Install dependencies.
@@ -53,7 +55,7 @@ To use the PDF Intelligence System:
 
 ## Acknowledgments
 
-We would like to express our gratitude to the Hugging Face community for the all-MiniLM-L6-v2 Embeddings model, and OpenAI for providing the GPT-3.5 Turbo model through their API.
+I would like to express our gratitude to the Hugging Face community for the all-MiniLM-L6-v2 Embeddings model, and OpenAI for providing the GPT-3.5 Turbo model through their API.
 
 ---
 
